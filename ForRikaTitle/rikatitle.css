@@ -1,0 +1,204 @@
+/* GLOBAL CSS */
+
+* {
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background: none !important;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  /* color */
+.gradient-text1 {
+    background-image: linear-gradient(to right, #000000, #737373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text2 {
+    background-image: linear-gradient(to left, #000000, #737373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text3 {
+    background-image: linear-gradient(to bottom left, #000000, #737373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text4 {
+    background-image: linear-gradient(to top left, #000000, #737373);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text5 {
+    background-image: linear-gradient(90deg, #5170ff, #ff66c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text6 {
+    background-image: linear-gradient(90deg, #000000, #c89116);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  } 
+  .gradient-text7 {
+    background-image: linear-gradient(90deg, #ff2970, #a91bac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  } 
+  .gradient-text8 {
+    background-image: linear-gradient(90deg, #8c52ff, #00bf63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text9 {
+    background-image: linear-gradient(90deg, #5de0e6, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text10 {
+    background-image: linear-gradient(90deg, #004aad, #cb6ce6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text11 {
+    background-image: linear-gradient(to right, #800080, #FF0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text12 {
+    background-image: linear-gradient(90deg, #006699, #800080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .gradient-text13 {
+    background-image: linear-gradient(to right, #999999, #663399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  /* body css */
+
+  .rika {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    /* padding: 0 30px; */
+    padding: 0 70px;
+  }
+  .rikabutton {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 13px;
+  }
+  .rikalogo {
+    display: inline-block;
+  }
+  
+  .rikalogo img {
+    width: 75px;
+  }
+  .rikalogo h3 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ff4500;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+  }
+  .rikabutton button {
+    padding: 10px 25px;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    background-image: linear-gradient(
+      to right,
+      #f55f8d 0,
+      #f8ae56 51%,
+      #f55f8d 100%
+    );
+    transition: all 0.5s;
+    background-size: 200%;
+  }
+  .rikabutton button:hover {
+    background-position: right center;
+  }
+  .rikabutton h4 {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 25px;
+    animation: colorChange 5s infinite;
+  }
+  @keyframes colorChange {
+    0% {
+      color: #0000ff;
+    }
+    50% {
+      color: #07D2F6;
+    }
+    100% {
+      color: green;
+    }
+  }
+
+  ruby {
+    word-break: keep-all;
+    /* ruby-position: over; */
+  }
+
+  .moving-text-dich {
+    animation: moveTextdich 3s linear infinite;
+  }
+  @keyframes moveTextdich {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
