@@ -382,8 +382,8 @@
   
   .content {
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 37%;
+    left: 45%;
     transform: translate(-50%, -50%);
     /* text-align: center; */
     color: #020408;
@@ -391,16 +391,24 @@
   .content1 {
     position: absolute;
     top: 46%;
-    left: 87%;
+    left: 95%;
     transform: translate(-50%, -50%);
     
     color: #020408;
   }
-  .contentOutputVideo {
+  /* .contentOutputVideo {
     
-    width: 1280px;
-    height: 720px;
-  }
+    width: 1700px;
+    height: 950px;
+  } */
+  .contentOutputVideo {
+    width: 100%; /* Sử dụng 100% để tự động điều chỉnh kích thước theo phần tử cha */
+    max-width: 1700px; /* Giới hạn kích thước tối đa */
+    height: auto; /* Cho phép chiều cao tự động điều chỉnh để giữ tỷ lệ khung hình */
+    max-height: 950px; /* Giới hạn chiều cao tối đa */
+    box-sizing: border-box; /* Bao gồm padding và border trong kích thước tổng cộng */
+}
+
   .parentGroup {
     display: flex;
     justify-content: space-between;
@@ -832,7 +840,8 @@
     background: linear-gradient(to right, rgb(206 241 247), #FFFFFF);
   }
   .carousel_single-item .slideCarousel .changeContent1 p, .slideCarousel p {
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 27px;
   }
   .carousel_single-item .slideCarousel .note .note1 {
     font-size: 27px;

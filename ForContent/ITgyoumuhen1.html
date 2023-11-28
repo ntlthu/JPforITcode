@@ -1,100 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Gyoumuhen 1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
 
-    <!-- Bootstrap CSS v5.2.1 -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
     />
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <!-- // Add the new slick-theme.css if you want the default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./ITgyoumuhen.css" />
   </head>
 
   <body>
-    <header>
-      <!-- place navbar here -->
-    </header>
-    <main>
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+    <section class="">
+      <div class="video-background">
+        <video autoplay muted loop id="video">
+          <source
+            src="../img/Canhhoaroi_ver2_backgroundtrang.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="parentGroup">
+          <div class="content contentOutputVideo">
+            <div class="rika">
+              <div class="rikalogo">
+                <img src="./img/Học Tiếng Nhật Cùng.png" alt="" />
+                <h3 class="">Rika Channel</h3>
+              </div>
+
+              <div class="rikabutton">
+                <button class="buttonListen">Luyện Nghe</button>
+                <button class="buttonRead">Luyện Đọc</button>
+                <button class="buttonTrans">Luyện Dịch</button>
+                <h4>Luyện 3 kỹ năng tiếng Nhật chỉ trong 1 video</h4>
+              </div>
+            </div>
+            <div class="rikacontentNgheDoc">
+              <div class="carousel_single-item">
+                <div class="slideCarousel">
+                  <div>
+                    <p
+                      class="buttonluyendich moving-text-dich gradient-text11"
+                      style="font-size: 22px; text-align: center"
+                    >
+                      第1章_Unit 1 求人ポスター_ Track
+                      1：ラジオのコマーシャルが流れています。
+                    </p>
+                  </div>
+                  <div class="TranslateContent">
+                    <p id="p1">
+                      DJ：夢の世界へようこそ！　アルクテクノジー社は秋葉原に本社があり、シリコンバレーにも支社のあるロボット開発企業です。<br />
+                      &emsp;&ensp;日本とアメリカで活躍するエンジニアたちは合計3,500人！　あなたもここで未来を作る仲間に入りませんか。私たちは、夢のある若い
+                      <br />
+                      &emsp;&ensp;技術者たちを応援しています。あなたに熱い夢があるなら、ぜひ、当社へ！「ロボットとともに明るい未来を」。アルクテクノロジー。
+                    </p>
+                  </div>
+                  <p
+                    id="p2"
+                    style="
+                      font-size: 27px;
+                      font-weight: 700;
+                      color: #dc4f72;
+                      margin-bottom: 0rem;
+                    "
+                  >
+                    Từ vựng:
+                  </p>
+                  <div class="tuvung changeContent">
+                    <div class="changeContent1">
+                      <p id="p3">
+                        <b class="text-primary">・コマーシャル</b>
+                        <span style="font-weight: 700">: Commercial</span>
+                      </p>
+                    </div>
+                    <div class="changeContent1">
+                      <p id="p6">
+                        <b class="text-primary">・見頃</b
+                        ><span style="font-weight: 700"
+                          >「KIẾN KHOẢNH」: có nghĩa là hoa đang ở giai đoạn đẹp
+                          nhất, nên đây là thời gian tốt nhất để xem, lúc thích
+                          hợp nhất để xem</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content1 support">
+            <div class="prepare ms-4">
+              <div class="buttonForLuyenDich">
+                <div class="buttonslide1">
+                  <button onclick="toggleParagraph(1)">T1</button>
+                  <button onclick="toggleParagraph(2)"></button>
+                  <button onclick="toggleParagraph(3)"></button>
+                  <button onclick="toggleParagraph(4)"></button>
+                  <button onclick="toggleParagraph(5)"></button>
+                  <button onclick="toggleParagraph(6)"></button>
+                  <button onclick="toggleParagraph(7)"></button>
+                  <button onclick="toggleParagraph(8)"></button>
+                  <button onclick="toggleParagraph(9)"></button>
+                </div>
+              </div>
+            </div>
+            <div class="amthanh">
+              <div class="amthanhslide1">
+                <audio id="audio1" src="../audio/Cau1.mp3"></audio>
+                <audio id="audio2" src="../audio/Từ-vựng_Nguyen.mp3"></audio>
+                <audio
+                  id="audio3"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B5%E3%81%98%E3%81%95%E3%82%93&kanji=%E5%AF%8C%E5%A3%AB%E5%B1%B1"
+                ></audio>
+                <audio
+                  id="audio4"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%B5%E3%82%82%E3%81%A8&kanji=%E9%BA%93"
+                ></audio>
+                <audio id="audio5" src="../audio/kikarashi.mp3"></audio>
+                <audio
+                  id="audio6"
+                  src="https://storage.dekiru.vn/Data/2017/10/19/migoro-636439997436772046.mp3"
+                ></audio>
+                <audio
+                  id="audio7"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%80%E3%81%8B%E3%81%88%E3%82%8B&kanji=%E8%BF%8E%E3%81%88%E3%82%8B"
+                ></audio>
+                <audio id="audio8" src="../audio/chaodon.mp3"></audio>
+                <audio
+                  id="audio9"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%80%E3%82%89&kanji=%E6%9D%91"
+                ></audio>
+              </div>
+              <div class="amthanhslide2">
+                <audio id="audio10" src="../audio/Cau2.mp3"></audio>
+                <audio id="audio11" src="../audio/Từ-vựng_Nguyen.mp3"></audio>
+                <audio
+                  id="audio12"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%93%E3%81%86%E3%81%88%E3%82%93&kanji=%E5%85%AC%E5%9C%92"
+                ></audio>
+                <audio
+                  id="audio13"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%86%E3%81%88%E3%82%8B&kanji=%E6%A4%8D%E3%81%88%E3%82%8B"
+                ></audio>
+                <audio
+                  id="audio14"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%84%E3%81%A1%E3%82%81%E3%82%93&kanji=%E4%B8%80%E9%9D%A2"
+                ></audio>
+                <audio
+                  id="audio15"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%81%84%E3%82%8D%E3%81%84&kanji=%E9%BB%84%E8%89%B2%E3%81%84"
+                ></audio>
+                <audio
+                  id="audio16"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%95%E3%81%8B%E3%81%9B%E3%82%8B&kanji=%E5%92%B2%E3%81%8B%E3%81%9B%E3%82%8B"
+                ></audio>
+                <audio
+                  id="audio17"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%95%E3%81%8F&kanji=%E5%92%B2%E3%81%8F"
+                ></audio>
+              </div>
+              <div class="amthanhslide3">
+                <audio id="audio18" src="../audio/cau3_ghep.mp3"></audio>
+                <audio id="audio19" src="../audio/Từ-vựng_Nguyen.mp3"></audio>
+                <audio
+                  id="audio20"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AA%E3%81%AE%E3%81%AF%E3%81%AA&kanji=%E8%8F%9C%E3%81%AE%E8%8A%B1"
+                ></audio>
+                <audio
+                  id="audio21"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AB%E3%82%8B&kanji=%E4%BC%BC%E3%82%8B"
+                ></audio>
+                <audio id="audio22" src="../audio/hanabira.mp3"></audio>
+                <audio
+                  id="audio23"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%A8%E3%81%8F%E3%81%A1%E3%82%87%E3%81%86&kanji=%E7%89%B9%E5%BE%B4"
+                ></audio>
+                <audio
+                  id="audio24"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AF%E3%82%8B%E3%81%95%E3%81%8D&kanji=%E6%98%A5%E5%85%88"
+                ></audio>
+                <audio
+                  id="audio25"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%81%8A%E3%82%93&kanji=%E6%B0%97%E6%B8%A9"
+                ></audio>
+                <audio
+                  id="audio26"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%81%84%E3%81%8B&kanji=%E9%96%8B%E8%8A%B1"
+                ></audio>
+                <audio
+                  id="audio27"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BB%E3%81%A9&kanji=%E7%A8%8B"
+                ></audio>
+              </div>
+              <div class="amthanhslide4">
+                <audio id="audio28" src="../audio/Cau4-ghep.mp3"></audio>
+                <audio id="audio29" src="../audio/Từ-vựng_Nguyen.mp3"></audio>
+                <audio
+                  id="audio30"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%82%E3%81%95%E3%81%AF%E3%82%84%E3%81%8F&kanji=%E6%9C%9D%E6%97%A9%E3%81%8F"
+                ></audio>
+                <audio
+                  id="audio31"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8B%E3%82%93%E3%81%93%E3%81%86%E3%81%8D%E3%82%83%E3%81%8F&kanji=%E8%A6%B3%E5%85%89%E5%AE%A2"
+                ></audio>
+                <audio
+                  id="audio32"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8A%E3%81%A8%E3%81%9A%E3%82%8C%E3%82%8B&kanji=%E8%A8%AA%E3%82%8C%E3%82%8B"
+                ></audio>
+                <audio
+                  id="audio33"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%83%90%E3%83%83%E3%82%AF&kanji=%E3%83%90%E3%83%83%E3%82%AF"
+                ></audio>
+              </div>
+              <div class="amthanhslide5">
+                <audio
+                  id="audio35"
+                  src="https://storage.dekiru.vn/Data/2017/12/21/osameru-636494603208131138.mp3"
+                ></audio>
+                <audio
+                  id="audio34"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%92%E3%81%98%E3%82%85%E3%82%93&kanji=%E4%B8%8B%E6%97%AC"
+                ></audio>
+                <audio
+                  id="audio36"
+                  src="../audio/toiukoto-1687190796.mp3"
+                ></audio>
+                <audio
+                  id="audio37"
+                  src="../audio/toiukoto-1687190796.mp3"
+                ></audio>
+                <audio id="audio38" src="../audio/1Sanphammoi.mp3"></audio>
+                <audio id="audio39" src="../audio/nghenoinghiphep.mp3"></audio>
+                <audio id="audio40" src="../audio/dubaothoitiet.mp3"></audio>
+                <audio id="audio41" src="../audio/nguongmotainang.mp3"></audio>
+                <audio id="audio42" src=""></audio>
+                <audio id="audio43" src=""></audio>
+                <audio id="audio44" src=""></audio>
+                <audio id="audio45" src=""></audio>
+                <audio
+                  id="audio46"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%8A%E3%82%85%E3%81%86%E3%81%AB%E3%82%85%E3%81%86&kanji=%E6%B5%81%E5%85%A5"
+                ></audio>
+                <audio
+                  id="audio47"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%98%E3%82%87%E3%81%86%E3%81%97%E3%82%87%E3%81%86&kanji=%E4%B8%8A%E6%98%87"
+                ></audio>
+                <audio
+                  id="audio48"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89&kanji=%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89"
+                ></audio>
+                <audio
+                  id="audio49"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%8D%E3%82%85%E3%81%86&kanji=%E6%80%A5"
+                ></audio>
+                <audio
+                  id="audio50"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%9F%E3%82%81&kanji=%E7%82%BA"
+                ></audio>
+                <audio
+                  id="audio51"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%AF%E3%82%93%E3%82%89%E3%81%8F&kanji=%E5%8F%8D%E8%90%BD"
+                ></audio>
+                <audio
+                  id="audio52"
+                  src="http://assets.languagepod101.com/dictionary/japanese/audiomp3.php?kana=%E3%81%BF%E3%81%8B%E3%81%9F&kanji=%E8%A6%8B%E6%96%B9"
+                ></audio>
+                <audio id="audio53" src="../audio/osore.mp3"></audio>
+                <audio id="audio54" src="../audio/osorevidu.mp3"></audio>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <p>hjfdjfsjjkhfgjkfdjghfjkdghjkdf</p>
-          </div>
-          <div class="carousel-item">
-            <p>hjfdjfsjjkhfgjkfdjghfjkdghjkdf</p>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    </section>
+    <!-- BS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick carousel -->
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="./slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel_single-item").slick({
+          // setting-name: setting-value
+          dots: true,
+        });
+      });
+    </script>
+    <!-- TOOLTIPS BS -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <!-- Popovers -->
+    <!-- <script>
+           const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+           const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+       </script> -->
+    <script>
+      $(".control-audio").click(function () {
+        let src = $(this).attr("src");
+        const audio = new Audio(src);
+        audio.play();
+      });
+    </script>
+    <script src="./main1.js"></script>
   </body>
 </html>
