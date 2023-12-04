@@ -124,6 +124,14 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+  .textkotoba {
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    color: #004aad;
+    background-color: rgb(239, 199, 245);
+    text-align: center;
+  }
   .video-background {
     position: fixed;
     top: 0;
@@ -145,17 +153,21 @@
   
   .content {
     position: absolute;
-    top: 37%;
+    /* top: 37%; */
+    top: 0; /* Đặt giá trị top thành 0 để cố định top */
     left: 45%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, 0); /* Giữ nguyên transform cho căn giữa */
     /* text-align: center; */
     color: #020408;
   }
   .content1 {
     position: absolute;
-    top: 46%;
+    /* top: 46%; */
+    top: 0;
     left: 95%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, 0);
     
     color: #020408;
   }
@@ -386,7 +398,7 @@
 
   .carousel_single-item {
     /* background-color: antiquewhite; */
-    background-image: url(../img/rika.png);
+    background-image: url(./img/rika.png);
     
     /* background-size: cover; */
     background-repeat: no-repeat;
@@ -439,7 +451,7 @@
     justify-content: space-between;
   }
   .carousel_single-item .changeContent .changeContent1 {
-    width: 50%;
+    width: calc(100% / 3);
     padding-left: 30px;
   }
   
@@ -474,9 +486,22 @@
   .note {
     background: linear-gradient(to right, rgb(206 241 247), #FFFFFF);
   }
-  .carousel_single-item .slideCarousel .changeContent1 p, .slideCarousel h3 {
-    font-size: 35px;
-    
+  .carousel_single-item .slideCarousel .JPpara {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .carousel_single-item .slideCarousel .JPpara .indent {
+    padding-left: 50px;
+  }
+  .carousel_single-item .slideCarousel .VNpara {
+    font-size: 25px;
+  }
+  .carousel_single-item .slideCarousel .changeContent1 p {
+    font-size: 27px;
+
+  }
+  .carousel_single-item .slideCarousel .changeContent1 p {
+    font-weight: 700;
   }
   .carousel_single-item .slideCarousel .note .note1 {
     font-size: 27px;
